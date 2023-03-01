@@ -16,12 +16,15 @@
     "react": "^18.2.0",
     "react-background-video-player": "^1.1.8",
     "react-dom": "^18.2.0",
+    "react-gallery-carousel": "^0.4.0",
     "react-photo-album": "^2.0.2",
     "react-photo-gallery": "^8.0.0",
+    "react-responsive-button": "^0.2.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.4.2",
     "react-router-hash-link": "^2.4.3",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.8.9",
+    "react-simple-image-slider": "^2.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",

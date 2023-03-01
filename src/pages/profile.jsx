@@ -45,7 +45,7 @@ export function Programs() {
         </div>
       </div>
       <section className="bg-gray-100 px-4 pt-20 pb-20">
-        <div class="mb-10 ml-10 mr-10 flex flex-col rounded-xl bg-red-500 bg-clip-border shadow-none">
+        <div class="mb-10 ml-10 mr-10 flex flex-col rounded-xl bg-black bg-clip-border shadow-none">
           <div class="flex">
             <div class="w-1/3">
               <img
@@ -75,7 +75,7 @@ export function Programs() {
             </div>
           </div>
         </div>
-        <div className="mb-10 ml-10 mr-10 flex flex-col rounded-xl bg-red-500 bg-clip-border shadow-none">
+        <div className="mb-10 ml-10 mr-10 flex flex-col rounded-xl bg-black bg-clip-border shadow-none">
           <div className="flex">
             <div className="w-1/3">
               <img class="rounded-l-lg object-cover w-full h-full" src="/img/5.png" alt="card image" />
@@ -106,7 +106,7 @@ export function Programs() {
           </div>
         </div>
 
-        <div class="mb-10 ml-10 mr-10 flex flex-col rounded-xl bg-red-500 bg-clip-border shadow-none">
+        <div class="mb-10 ml-10 mr-10 flex flex-col rounded-xl bg-black bg-clip-border shadow-none">
           <div class="flex">
             <div class="w-1/3 bg-white rounded-l-lg">
               <img class="rounded-l-lg object-cover w-full h-full" src="/img/sponsorshipStarburst.png" alt="card image" />

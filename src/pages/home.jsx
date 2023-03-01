@@ -118,7 +118,7 @@ export function Home() {
                 <CardHeader className="relative h-56">
                   <img
                     alt="Card Image"
-                    src="/img/team1.png"
+                    src="/img/5.png"
                     className=" h-30 w-full"
                   />
                 </CardHeader>
@@ -152,10 +152,10 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48">
+      <section className="mx-8 px-6 pt-20 pb-20">
         <div className="container mx-auto">
           <PageTitle heading="Manage" span1="ment"></PageTitle>
-          <div className="gap-x-18 mt-24 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="gap-x-18 mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3 items-center justify-center">
             {teamData.map(({ img, name, position, text, socials }) => (
               <TeamCard
                 key={name}

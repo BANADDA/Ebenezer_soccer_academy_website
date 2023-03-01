@@ -15,7 +15,7 @@ import { featuresData, teamData, contactData } from "@/data";
 export function About() {
   return (
     <>
-      <div className="relative flex h-fit bg-cover content-center items-center justify-center bg-[url('/img/field.png')] pt-16 pb-32 ">
+      <div className="relative flex h-fit bg-cover content-center items-center justify-center bg-[url('/img/clouds.png')] pt-16 pb-32 ">
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center pt-10">
             <div className="opacity-300 ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
@@ -80,7 +80,7 @@ export function About() {
                 <CardHeader className="relative h-56">
                   <img
                     alt="Card Image"
-                    src="/img/team1.png"
+                    src="/img/5.png"
                     className=" h-30 w-full"
                   />
                 </CardHeader>

@@ -3,7 +3,7 @@ import { Card, Avatar, Typography } from "@material-tailwind/react";
 
 export function TeamCard({ img, name, position, text, socials }) {
   return (
-    <Card color="transparent" shadow={true} className="text-center pl-4 pr-4 shadow-lg">
+    <Card color="transparent" shadow={true} className="text-center pl-3 pr-3 shadow-lg">
       <Avatar
         src={img}
         alt={name}

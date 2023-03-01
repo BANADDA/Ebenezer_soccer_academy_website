@@ -4,12 +4,14 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { useState } from 'react';
 import { send } from 'emailjs-com';
 
+
 import {
   Card,
   CardBody,
   CardHeader,
   Typography,
   Button,
+  alert,
 } from "@material-tailwind/react";
 import { UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
@@ -36,16 +38,26 @@ export function Contact() {
       toSend,
       '1bJtvRR-4vExy8zTu'
     )
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-      })
+    .then((response) => {
+      window.alert('SUCCESS!', 'Your message has been sent successfully.', 'success');
+      console.log('SUCCESS!', response.status, response.text);
+      setToSend({
+        from_name: '',
+        to_name: '',
+        message: '',
+        reply_to: '',
+      });
+      e.target.reset(); // clear the form fields
+    })
       .catch((err) => {
+        window.alert('Error!', err);
         console.log('FAILED...', err);
       });
   };
   
+  
   const handleChange = (e) => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
+    setToSend({ ...toSend, [e.target.name]: e.target.value});
   };
 
   return (
@@ -65,9 +77,9 @@ export function Contact() {
           </div>
         </div>
       </div>
-      <section class="pb-30 mb-32 pt-20 text-gray-800">
+      <section class="pb-30 mb-20 pt-20 text-gray-800">
         <div class="flex flex-wrap">
-          <div class="mb-6 w-full shrink-0 grow-0 basis-auto px-3 md:mb-0 md:w-6/12 lg:px-6">
+          <div class="mb-6 w-full shrink-0 grow-0 basis-auto px-3 md:mb-15 md:w-6/12 lg:px-6">
             <h2 class="mb-6 text-3xl font-bold">
               Contact <span className={styled["home-span"]}>Us</span>
             </h2>
@@ -96,7 +108,7 @@ export function Contact() {
               </Link>
             </p>
           </div>
-          <div class="bg-gray-500 mb-12 shrink-0 grow-0 basis-auto px-3 md:mb-0 md:w-6/12 lg:px-6  border-solid border-red-600 pt-10 pb-10 rounded-lg w-full">
+          <div class="bg-gray-500 mb-12 shrink-0 grow-0 basis-auto px-5 md:mb-0 md:w-6/12 lg:px-6  border-solid border-red-600 pt-10 pb-10 rounded-lg w-full">
             <form onSubmit={onSubmit}>
               <div class="form-group mb-6">
                 <input
@@ -205,7 +217,7 @@ export function Contact() {
           </div>
         </div>
       </section>
-      <div id="contact-us" className=" bg-black p-10 pb-0"></div>
+      <div id="contact-us" className=" bg-black p-10 pb-0 mb-0"></div>
     </>
   );
 }

@@ -11,36 +11,36 @@ const slideWidth = 20;
 const _items = [
     {
         player: {
-            title: 'Ssembusi Farouk',
-            desc: 'Mid-Fielder',
+            title: 'Ssembuusi Faruuk',
+            desc: 'MidFielder',
             image: '/img/player1.png',
         },
     },
     {
         player: {
-            title: "Ronnie O'Sullivan",
+            title: "Kizza",
             desc: "Forward",
             image: '/img/player2.png',
         },
     },
     {
         player: {
-            title: 'Shane Van Boening',
-            desc: 'Defender',
+            title: 'Hakim',
+            desc: 'MidFielder',
             image: '/img/player3.png',
         },
     },
     {
         player: {
             title: 'Brain Mugisha',
-            desc: 'Mid-Fielder',
+            desc: 'Forward',
             image: '/img/player4.png',
         },
     },
     {
         player: {
-            title: 'Willie Mosconi',
-            desc: 'Goal Keeper',
+            title: 'Okwi',
+            desc: 'MidFielder',
             image: '/img/player5.png',
         },
     },

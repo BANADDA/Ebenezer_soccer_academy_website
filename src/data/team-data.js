@@ -60,8 +60,29 @@ export const teamData = [
     ],
   },
   {
+    img: "/img/toby.jpeg",
+    name: "Tobius Saul Bateesa",
+    position: "IT Manager",
+    // text: "Jhon Mickel is a marketing and communications expert with a passion for soccer. He is responsible for increasing the visibility of the Ebenezer Soccer Academy and ensuring that its message reaches the right people.",
+    socials: [
+      // {
+      //   color: "light-blue",
+      //   name: "twitter",
+      // },
+      // {
+      //   color: "blue",
+      //   name: "facebook",
+      // },
+      // {
+      //   color: "pink",
+      //   name: "dribbble",
+      // },
+    ],
+  },
+  
+  {
     img: "/img/Coach.png",
-    name: "Galyaki Allan",
+    name: "Wakabi Allan",
     position: "Head Coach",
     // text: "Jhon Mickel is a marketing and communications expert with a passion for soccer. He is responsible for increasing the visibility of the Ebenezer Soccer Academy and ensuring that its message reaches the right people.",
     socials: [
@@ -77,6 +98,33 @@ export const teamData = [
       //   color: "pink",
       //   name: "dribbble",
       // },
+    ],
+  },
+  
+  {
+    img: "/img/coach_2.png",
+    name: "Mulangira Eric",
+    position: "Coach",
+    // text: "Jhon Mickel is a marketing and communications expert with a passion for soccer. He is responsible for increasing the visibility of the Ebenezer Soccer Academy and ensuring that its message reaches the right people.",
+    socials: [
+    ],
+  },
+  
+  
+  {
+    img: "/img/will.png",
+    name: "Hamza",
+    position: "Transport Manager",
+    // text: "Jhon Mickel is a marketing and communications expert with a passion for soccer. He is responsible for increasing the visibility of the Ebenezer Soccer Academy and ensuring that its message reaches the right people.",
+    socials: [
+    ],
+  },
+  {
+    img: "/img/eric.jpeg",
+    name: "EricPeter Wairagala",
+    position: "Digital Ambassador",
+    // text: "Jhon Mickel is a marketing and communications expert with a passion for soccer. He is responsible for increasing the visibility of the Ebenezer Soccer Academy and ensuring that its message reaches the right people.",
+    socials: [
     ],
   },
 ];
