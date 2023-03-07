@@ -1,27 +1,32 @@
 import PropTypes from "prop-types";
-import { Card, Avatar, Typography } from "@material-tailwind/react";
+import { Card, Avatar, Typography, CardHeader, CardBody, CardFooter } from "@material-tailwind/react";
 
 export function TeamCard({ img, name, position, text, socials }) {
   return (
-    <Card color="transparent" shadow={true} className="text-center pl-3 pr-3 shadow-lg">
+    <Card  variant="gradient"  color="transparent" shadow={true} className="relative flex flex-col w-full max-w-[18rem] shadow-lg mb-5 mx-0">
+      <CardHeader floated={false} className="relative h-56">
       <Avatar
         src={img}
         alt={name}
-        size="xxl"
-        className="shadow-lg shadow-gray-800/25 h-80 m-0 p-0 w-full flex"
+        className="shadow-lg shadow-gray-800/25 h-full m-0 p-0 w-full flex"
       />
-      <Typography variant="h5" color="blue-gray" className="mt-6 mb-1">
+      </CardHeader>
+      <CardBody className="mb-0 text-center">
+      <Typography variant="h5" color="blue-gray" className="mb-0">
         {name}
       </Typography>
       {position && (
-        <Typography className="font-mediumtext-blue-gray-600">
+        <Typography className="font-medium text-blue-gray-600">
           {position}
         </Typography>
       )}
-      {text && (
-        <Typography className="text-blue-gray-500 font-light">{text}</Typography>
-      )}
-      {socials && <div className="mx-auto mt-5 text-red-500">{socials}</div>}
+      {/* {text && (
+        <Typography className="text-blue-gray-500 inline-block text-left font-light text-sm">{text}</Typography>
+      )} */}
+      </CardBody>
+      <CardFooter divider className="flex justify-center gap-7 pt-0 mb-0 py-3">
+      {socials && <div className="mx-auto text-red-500">{socials}</div>}
+      </CardFooter>
     </Card>
   );
 }
