@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { Navbar } from "@/widgets/layout";
 import routes from "@/routes";
 import SponsorUs from "./pages/sponserUs";
+import GalleryPage from "./pages/galleryPage";
 import { Contact, Home } from "./pages";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             element && <Route key={key} exact path={path} element={element} />
         )}
         <Route path="/sponsor" element={<SponsorUs/>} /> 
+        <Route path="/galleryPage" element={<GalleryPage/>} /> 
         {/* <Route path="" element={<Home/>} /> */}
        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

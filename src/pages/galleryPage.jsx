@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 import GalleryImages from "@/widgets/layout/gallery";
 
-export function galleryPage() {
+export function GalleryPage() {
   return (
     <>
       <div className="relative flex h-fit content-center items-center justify-center bg-[url('/img/clouds.png')] bg-cover bg-fixed pt-16 pb-32">
@@ -21,9 +21,9 @@ export function galleryPage() {
               >
                 Our <span className={styled["home-span"]}> Gallery.</span>
               </Typography>
-        <Typography variant='h5' className=' text-center'>
-           Explore our stunning photo gallery and relive the best moments of our academy, from training sessions to matches and everything in between.
-        </Typography>
+              <Typography variant='h5' className='inline-block text-left px-36'>
+                Explore our stunning photo gallery and relive the best moments of our academy, from training sessions to matches and everything in between.
+              </Typography>
             </div>
           </div>
         </div>
@@ -38,4 +38,4 @@ export function galleryPage() {
   );
 }
 
-export default galleryPage;
+export default GalleryPage;

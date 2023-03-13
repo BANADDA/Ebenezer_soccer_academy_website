@@ -2,7 +2,6 @@ import { Home, Programs, SignIn, About} from "@/pages";
 import Contact from "./pages/contact";
 import GalleryPage from "./pages/galleryPage";
 import { PhoneIcon, UsersIcon } from "@heroicons/react/24/outline";
-// import { Link } from 'react-scroll';
 import {
   HomeIcon,
   ArrowRightOnRectangleIcon,

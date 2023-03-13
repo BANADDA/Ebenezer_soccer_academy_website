@@ -22,7 +22,7 @@ import Patners from "@/widgets/cards/patners";
 export function Home() {
   return (
     <>
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32 ">
+      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
         <video
           autoPlay
           loop
@@ -106,7 +106,7 @@ export function Home() {
                 to inspire, empower, and transform the lives of young people in
                 the Musita community and beyond.
               </Typography>
-              <Link to="contact/">
+              <Link to="/contact">
                 <Button
                   variant="outlined"
                   className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white focus:ring-gray-200"
@@ -140,21 +140,21 @@ export function Home() {
                     ensure that our most gifted players receive the support they
                     need to become true champions both on and off the field.
                   </Typography>
-                  <a href="/galleryPage">
+                  <Link to="/galleryPage">
                     <Button
                       variant="text"
                       className="text-red-500 hover:bg-red-500/10 active:bg-red-500/30"
                     >
                       View Gallery
                     </Button>
-                  </a>
+                  </Link>
                 </CardBody>
               </Card>
             </div>
           </div>
         </div>
       </section>
-      <section className="mx-8 px-6 pt-10 pb-10">
+      <section className="mx-8 px-6 pt-10 pb-10 bg-white">
         <div className="container mx-auto ">
           <PageTitle heading="Manage" span1="ment" className></PageTitle>
           <div className="gap-x-18 mt-10 grid grid-cols-2 gap-6 md:grid-cols-2 xl:grid-cols-4 items-center grid-auto-rows" style={{ gridAutoRows: '1fr' }}>
